@@ -1,0 +1,36 @@
+{
+    "name": "gfernandez/laravel-rest-api",
+    "description": "Laravel REST API boilerplate",
+    "keywords": [
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gabriel Fernandez",
+            "email": "hotdesc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    },
+    "require-dev": {
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "Gfernandez\\LaravelRestApi\\": "src"
+        },
+        "files": [
+          "src/helpers.php"
+        ]
+      },
+      "extra": {
+        "laravel": {
+          "providers": [
+            "Gfernandez\\LaravelRestApi\\LaravelRestApiServiceProvider"
+          ]
+        }
+      }
+}
